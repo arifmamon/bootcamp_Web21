@@ -1,13 +1,23 @@
 * {
     box-sizing: border-box;
 }
-dt {
-    background-color: blue;
-    padding: 2px;
-    border: 2px solid black;
-    
-    font-size: 40px;
+body {
+    background-color: #8e9aaf;
+    zoom: 4;
+    padding-bottom: 37px;  /* To Make Last List Working*/
 }
-dd {
-    border-color: black;
+dt {
+    background: #B8C1C8;
+    border-bottom: 1px solid #989EA4;
+    border-top: 1px solid #717D85;
+    color: #FFF;
+    font: bold 18px/21px sans-serif;
+    padding: 2px 1px 1px 12px;
+    position: sticky;
+    top: 0px;
+    
+}
+.numbers {
+    border: 1px solid black;
+    padding-left: 5px;
 }
