@@ -13,6 +13,7 @@ dt {
     color: #FFF;
     font: bold 18px/21px sans-serif;
     padding: 2px 1px 1px 12px;
+    margin: 0px 1px 0px 1px;
     position: sticky;
     top: 0px;
     
@@ -20,6 +21,7 @@ dt {
 .numbers {
     border: 1px solid black;
     padding-left: 5px;
+    margin: 1px 1px;
     
 }
 li::before {
