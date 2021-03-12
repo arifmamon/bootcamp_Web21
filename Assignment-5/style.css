@@ -17,6 +17,9 @@
     background-color: #c5dedd;
 
 }
+.container {
+    background-color: khaki;
+}
 @media screen and (min-width: 1024px) {
  .container {
     max-width: 10px;
