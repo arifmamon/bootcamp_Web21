@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 #navbar-start {
     display: inline-block;
     list-style-type: none;
@@ -8,4 +12,13 @@
 .navbar-start {
     display: flex;
     flex-grow: 4;
+}
+
+.container_custom{
+    background-color: #c5dedd;
+
+}
+.container {
+    
+    display: flex;
 }
