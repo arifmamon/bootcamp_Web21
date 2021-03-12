@@ -13,12 +13,12 @@
     display: flex;
     flex-grow: 4;
 }
-
 .container_custom{
     background-color: #c5dedd;
 
 }
-.container {
-    
-    display: flex;
+@media screen and (min-width: 1024px) {
+ .container {
+    max-width: 10px;
+}
 }
