@@ -1,0 +1,11 @@
+#navbar-start {
+    display: inline-block;
+    list-style-type: none;
+}
+.navbar-item {
+    font-size: 26px;
+}
+.navbar-start {
+    display: flex;
+    flex-grow: 4;
+}
