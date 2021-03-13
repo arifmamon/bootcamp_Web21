@@ -2,26 +2,23 @@
     margin: 0;
     padding: 0;
 }
-#navbar-start {
-    display: inline-block;
-    list-style-type: none;
+.container {
+    border: 5px solid #4CAF50;
+    margin-bottom: 50px;
 }
-.navbar-item {
-    font-size: 26px;
-}
-.navbar-start {
-    display: flex;
-    flex-grow: 4;
-}
-.container_custom{
-    background-color: #c5dedd;
+.item-1 {
+    height: 350px;
+    padding: 5px;
+    overflow: auto;
 
 }
-.container {
-    background-color: ;
+.image {
+    height: 340px;
+    width: 320px;
+    float: left;
+    padding: 6px 10px 6px;
 }
-@media screen and (min-width: 1024px) {
- .container {
-    max-width: 10px;
-}
+.image-text {
+    padding: 100px 0;
+
 }
