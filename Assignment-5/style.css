@@ -35,7 +35,16 @@ body {
 
 }
 .info {
-    height: 200px;
+    height: auto;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto 2em;
+}
+.projects{
+    margin: 30px auto 3em;
+}
+.list-group {
+    padding: 0px 2px 38px;
+}
+.d-flex {
+    font-size: 38px;
 }
