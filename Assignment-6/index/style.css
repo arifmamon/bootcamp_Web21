@@ -59,3 +59,17 @@ li{
     top: 0;
     padding: 12px 16px 12px 16px;
 }
+button {
+	outline: none;
+}
+
+button {
+	background: none;
+	border: 0px;
+	color: #888;
+	font-size: 15px;
+	width: 60px;
+	margin: 10px 0 0;
+	font-family: Lato, sans-serif;
+	cursor: pointer;
+}
