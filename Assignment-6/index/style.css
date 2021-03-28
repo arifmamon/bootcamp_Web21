@@ -2,11 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 30px;
+    padding: 20px 20px 20px;
     border: 3px solid rgb(233, 222, 222);
     width: 450px;
     margin: 50px auto;
+    flex-direction: row;
     
+}
+#input_type{
+    border: 2px solid red;
+    width: 70%;
+    font-size: 25px;
+    margin-right: 10px;
+}
+#button {
+    font-size: 25px;
 }
 #showlist {
     padding: 0px 20px 30px;
