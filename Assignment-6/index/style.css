@@ -1,9 +1,23 @@
-section {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    padding: 20px 20px 30px;
     border: 3px solid rgb(233, 222, 222);
-    width: 500px;
+    width: 450px;
     margin: 50px auto;
+    
+}
+#showlist {
+    padding: 0px 20px 30px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(233, 222, 222);
+    width: 450px;
+    margin: 50px auto;
+}
+.head_list {
+    text-align: center;
+    color:navy;
+    font-size: 30px;
 }
