@@ -30,5 +30,4 @@ button.onclick = function(e) {
     //     e.target.remove();
     // }
     sholist.append(list);
-
 }
