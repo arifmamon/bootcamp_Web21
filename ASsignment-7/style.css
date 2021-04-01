@@ -1,5 +1,9 @@
 .input {
     text-align: center;
-    size: 20px;
     padding: 20px 0 10px;
+}
+#input_text {
+    width: 20%;
+    font-size: 25px;
+    margin: 9px 9px 9px ;
 }
