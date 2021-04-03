@@ -6,6 +6,7 @@ const temp = document.querySelector('.tempreture');
 const showWeather = document.querySelector('.weather');
 const weIcon  = document.querySelector('.icon');
 const tem_min_max = document.querySelector('.temp_minimum');
+
 const getWeather = async(searchtext) => {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchtext}&units=metric&APPID=0c93f81cd20966730205c9b8a1277096`)
     .then(res => res.json())
