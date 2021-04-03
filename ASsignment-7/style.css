@@ -2,7 +2,7 @@ body {
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('https://images.unsplash.com/photo-1507014762487-9626c6592c3f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
 }
 .input {
     text-align: center;
@@ -13,10 +13,11 @@ body {
     font-size: 25px;
     margin: 9px 9px 9px ;
     border: 4px solid #ddbea9;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .button {
     font-size: 25px;
+    border-radius: 10px;
 }
 .cityName,.countryName{
     font-size: 35px;
