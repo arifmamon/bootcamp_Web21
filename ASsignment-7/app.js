@@ -17,18 +17,19 @@ const getWeather = async(searchtext) => {
         temp_ = data.main.temp;
         temp_min1 = data.main.temp_min;
         temp_max2 = data.main.temp_max;
-        today_date = Date();
         
-        cityName.append(namevalue +', ' + country);
+        cityName.innerHTML =  (namevalue +', ' + country);
         //countryName.innerHTML = country;
         temp.innerHTML = temp_ + '°c';
         showWeather.innerHTML = weather;
         tem_min_max.innerHTML = temp_min1 + '°c' +' / '+ temp_max2 + '°c';
+
     })
 }
 input.addEventListener('submit', (e) => {
     console.dir(input.elements[0].value);
     const searchtext = input.elements[0].value;
     getWeather(searchtext);
+    input.elements[0].value="";
     e.preventDefault();
 })
