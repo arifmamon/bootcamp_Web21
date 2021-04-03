@@ -6,7 +6,7 @@ const temp = document.querySelector('.tempreture');
 const showWeather = document.querySelector('.weather');
 const weIcon  = document.querySelector('.icon');
 const tem_min_max = document.querySelector('.temp_minimum');
-
+const date = document.querySelector('.date');
 const getWeather = async(searchtext) => {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchtext}&units=metric&APPID=0c93f81cd20966730205c9b8a1277096`)
     .then(res => res.json())
@@ -17,8 +17,10 @@ const getWeather = async(searchtext) => {
         temp_ = data.main.temp;
         temp_min1 = data.main.temp_min;
         temp_max2 = data.main.temp_max;
+        today_date = Date();
         
         cityName.append(namevalue +', ' + country);
+        date.append(today_date);
         //countryName.innerHTML = country;
         temp.innerHTML = temp_ + '°c';
         showWeather.innerHTML = weather;
