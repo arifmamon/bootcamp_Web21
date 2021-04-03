@@ -20,12 +20,10 @@ const getWeather = async(searchtext) => {
         today_date = Date();
         
         cityName.append(namevalue +', ' + country);
-        date.append(today_date);
         //countryName.innerHTML = country;
         temp.innerHTML = temp_ + '°c';
         showWeather.innerHTML = weather;
         tem_min_max.innerHTML = temp_min1 + '°c' +' / '+ temp_max2 + '°c';
-
     })
 }
 input.addEventListener('submit', (e) => {
