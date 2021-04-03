@@ -10,14 +10,14 @@ const getWeather = async(searchtext) => {
     fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchtext}&units=metric&APPID=0c93f81cd20966730205c9b8a1277096`)
     .then(res => res.json())
     .then(data => {
-        var namevalue = data.name;
-        var country = data.sys.country;
-        var weather = data.weather[0].description;
-        var temp_ = data.main.temp;
-        var temp_min1 = data.main.temp_min;
-        var temp_max2 = data.main.temp_max;
+        namevalue = data.name;
+        country = data.sys.country;
+        weather = data.weather[0].description;
+        temp_ = data.main.temp;
+        temp_min1 = data.main.temp_min;
+        temp_max2 = data.main.temp_max;
         
-        cityName.innerHTML = namevalue +', ' + country;
+        cityName.append(namevalue +', ' + country);
         //countryName.innerHTML = country;
         temp.innerHTML = temp_ + '°c';
         showWeather.innerHTML = weather;
