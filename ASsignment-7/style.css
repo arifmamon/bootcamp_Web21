@@ -10,3 +10,6 @@
 .button {
     font-size: 25px;
 }
+.weather {
+    text-transform: capitalize;
+}
