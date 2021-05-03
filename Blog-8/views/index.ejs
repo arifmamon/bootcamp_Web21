@@ -8,23 +8,20 @@
 </head>
 <body>
     <h1>Blogs</h1>
-    <h3 onclick=''>Click Me</h3>
     <div>
         <ul>
-            <%for(let blog of blogs){%>
+            <%for(let item of blogs){%>
                 <li>
                     <h1>
-                    <%= blog.title %>
+                    <%= item.title %>
                     </h1>
                     <br>
-                    <img src="<%= blog.image %>" />
+                    
                     <br>
                     
-                    <%= blog.blogtext %>
+                    <%= item.story %>
                     <br>
-                    <h3>
-                    <%= blog.author%>
-                    </h3>
+                    
                 </li>
                 <%}%>
         </ul>
