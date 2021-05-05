@@ -4,7 +4,7 @@ const Product = require('../models/product');
 const Comment = require('../models/comment');
 
 
-// Display all the products
+// Display all the BLogs
 router.get('/blogs', async(req, res) => {
     
     const products=await Product.find({});
@@ -13,13 +13,13 @@ router.get('/blogs', async(req, res) => {
 })
 
 
-// Get the form for new product
+// Get the form for new Blog
 router.get('/blogs/new', (req, res) => {
     res.render('products/new');
 })
 
 
-// Create New Product
+// Create New Blog
 router.post('/blogs', async(req, res) => {
 
 
@@ -29,7 +29,7 @@ router.post('/blogs', async(req, res) => {
 });
 
 
-// Show particular product
+// Show particular BLog
 router.get('/blogs/:id', async(req, res) => {
     
     const product=await Product.findById(req.params.id).populate('comments');
@@ -47,7 +47,7 @@ router.get('/blogs/:id/edit', async(req, res) => {
     res.render('products/edit',{product});
 })
 
-// Upadate the particular product
+// Upadate the particular blog
 router.patch('/blogs/:id', async(req, res) => {
     
     await Product.findByIdAndUpdate(req.params.id, req.body.product);
@@ -56,7 +56,7 @@ router.patch('/blogs/:id', async(req, res) => {
 })
 
 
-// Delete a particular product
+// Delete a particular blog
 router.delete('/blogs/:id', async (req, res) => {
     await Product.findByIdAndDelete(req.params.id);
     res.redirect('/blogs');
@@ -65,7 +65,7 @@ router.delete('/blogs/:id', async (req, res) => {
 
 
 
-// Creating a New Comment on a Product
+// Creating a New Comment on a blog
 
 router.post('/blogs/:id/comment', async (req, res) => {
     
