@@ -4,7 +4,7 @@
 
 
 <div class="container" style="margin-top:3rem;width:80vw">
- 
+  <%- include("../partials/flash")%>
             <form class="validated-form" action="/blogs/<%=product._id%>?_method=PATCH" method="POST" style="max-width:70%;margin:10px auto" novalidate>
                 <div class="mb-3">
                   <label for="name" class="form-label" >Title Name</label>
