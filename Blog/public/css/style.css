@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(#ff8a00, #e52e71);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    flex-direction: column;
+}
+
+.homebutton {
+    border: 2px solid #ff8800;
+    padding: 15px 20px ;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ff8800;
+    background-color: #03071e;
+    transition: 0.2s;
+}
+.homebutton:hover {
+    background-color: #03071e;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 7px 0px  #ffd166;
+    border: 2px solid #ffdd00;
+    color: #ffdd00;
+}

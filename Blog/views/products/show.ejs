@@ -1,0 +1,63 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+<div class="container mt-5">
+
+    <div class="row">
+        <div class="col-lg-6">
+          <h1 class="display-1""><%=product.name%></h1>
+          <img style="height: 350px;width: 600px;border-radius: 9px;object-fit: cover;" class="img-fluid" alt="..." src="<%=product.img%>">
+          <p class="storytext"><%=product.desc%></p>
+            
+                  
+                  <a href="/blogs/<%=product._id%>/edit" class="btn btn-warning">Edit this Blog</a>
+                  <div class="mt-3">
+                    <form action="/blogs/<%=product._id%>?_method=DELETE" method="POST">
+                        <button class="btn btn-danger">Delete</button>
+                  </form>
+                  </div>
+                 
+               
+        </div>
+
+        <div class="col-lg-6 commentarea">
+                <%for(let review of product.comments){%>
+                  <div class="card mb-3">
+                      <div class="card-body">
+                        <p style="font-size: 20px;">user : <%=review.users%></p>
+                        <p style="font-size: 20px;">Comment: <%=review.comment%></p>
+                      </div>
+                    </div>
+  
+              <%}%>
+
+              <h1>Comments : </h1>
+          <form  class="validated-form" action="/blogs/<%=product._id%>/comment" method="POST" style="max-width:70%;" novalidate>
+        
+            <div class="mb-3">
+                <label for="desc" class="form-label">Type Your Comment :</label>
+                <textarea class="form-control" id="desc" cols="35" rows="3" name="comment" required></textarea>
+                <div class="invalid-feedback">
+                  Comment Something Before Submit. 
+                </div>
+              </div>
+            <div>
+              <h5>Your Name :</h5>
+              <input class="form-control" name="users" required></input>
+              <div class="invalid-feedback">
+                Name is Required. 
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success submitbtn">Submit</button>
+          </form>
+            </div>
+        </div>
+
+     
+
+    </div>
+
+</div>
+
+
+<%- include("../partials/footer")%>

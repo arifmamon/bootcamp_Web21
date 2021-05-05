@@ -1,0 +1,27 @@
+.products {
+  margin: 5px auto;
+}
+.products .card img {
+  padding: 15px;
+  height: 200px;
+}
+.display-1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.display-4 {
+  text-align: center;
+}
+.card-text {
+  font-size: 25px;
+}
+.storytext {
+  font-size: 29px;
+}
+.submitbtn {
+  margin: 30px 0px 30px;
+}
+.commentarea {
+  margin-top: 100px;
+}
